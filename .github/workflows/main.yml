@@ -19,6 +19,7 @@ jobs:
       run: npm install
     - name: Build an application
       run: npm run build   
-
-    - name: Generate deployment package
-      run: zip -r deploy.zip . -x '*.git*'
+    - name: Create directory and move deployment package
+      run: |
+       mkdir packages
+       mv deploy.zip packages/
