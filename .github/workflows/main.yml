@@ -1,4 +1,4 @@
-name: realserv1
+name: realserv
 
 on:
   push:
