@@ -33,7 +33,7 @@ jobs:
 
     steps:
      - name: SSH deploy
-       uses: IamjayYT/ssh-action@master
+       uses: IamjayYT/ssh-action@main
        with:
           host: ${{ secrets.HOST }}
           username:  ${{ secrets.USER }}
