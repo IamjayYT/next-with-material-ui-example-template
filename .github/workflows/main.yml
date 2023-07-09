@@ -1,4 +1,4 @@
-name: realservapp2
+name: realservapp
 
 on:
   push:
