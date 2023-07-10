@@ -33,7 +33,7 @@ jobs:
 
     steps:
      - name: SSH deploy
-       uses: appleboy/ssh-action@main
+       uses: appleboy/ssh-action@master
        with:
           host: ${{ secrets.HOST }}
           username:  ${{ secrets.USER }}
@@ -49,5 +49,5 @@ jobs:
                git pull origin main
                npm install
                npm run build
-               pm2 restart web
+               pm2 restart api
             
